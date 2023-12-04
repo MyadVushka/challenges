@@ -84,15 +84,23 @@ body {
 
 
 @media screen and (max-width: 375px) {
+
   .wrapper {
-    width: 350px;
+    width: 360px;
     margin: 0 auto;
     padding-top: 3%;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
   }
   .front-block {
-    left: 5%;
-    top: 3%;
+    max-width: 330px;
+    left: 2.5%;
+    top: 7%;
     padding: 2%;
+  }
+  .background-block_img {
+    width: 360px;
   }
 }
 

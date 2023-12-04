@@ -8,8 +8,6 @@ faqs.forEach((faq) => {
       let panel = faq.nextElementSibling;
       let icon = faq.querySelector('.front-block__lower-icon');
       
-
-      
       if (panel.style.display === 'block') {
         panel.style.display = 'none';
         icon.src = './imgs/icon-plus.svg';
