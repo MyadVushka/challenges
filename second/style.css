@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Overpass:wght@400;700&display=swap');
+
+body {
+  font-family: 'Overpass';
+  font-weight: 400;
+  height: 100vh;
+  background-color: rgba(20,21,25,255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background: radial-gradient(circle at center top, rgba(35,42,52,255), rgba(22,31,38,255));;
+  border-radius: 30px;
+  padding: 30px 40px;
+}
+
+.wrapper__header {
+  background-color: rgba(255, 255, 255, 0.063);
+  display: inline-flex;
+  padding: 10px 10px;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper__text-title {
+  font-weight: 700;
+  color: white;
+}
+
+.wrapper__text-subtitle {
+  color: #878d99;
+  line-height: 1.4rem;
+}
+
+.wrapper__marks {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  padding: 20px 0;
+  border: none;
+  outline: none;
+}
+
+.wrapper__marks_mod {
+  background-color:  rgba(255, 255, 255, 0.063);
+  border: none;
+  cursor: pointer;
+  padding: 9px 14px;
+  border-radius: 40px;
+  color: rgba(225,230,238,255);
+}
+
+.wrapper__button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper__button {
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  color: white;
+  border-radius: 30px;
+  transition: all 0.2s;
+}
+
+.wrapper__button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+
+#wrap2 {
+  display: none;
+}
