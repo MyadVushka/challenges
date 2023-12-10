@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Overpass:wght@400;700&display=swap');
 
+:root {
+  --subtitle: #878d99;
+  --points: hsl(25, 97%, 53%);
+}
+
 body {
   font-family: 'Overpass';
   font-weight: 400;
@@ -13,12 +18,21 @@ body {
 .wrapper {
   background: radial-gradient(circle at center top, rgba(35,42,52,255), rgba(22,31,38,255));;
   border-radius: 30px;
-  padding: 30px 40px;
+  padding: 40px 30px;
+}
+
+#wrap1 {
+  min-width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .wrapper__header {
   background-color: rgba(255, 255, 255, 0.063);
   display: inline-flex;
+  width: 5%;
   padding: 10px 10px;
   border-radius: 40px;
   justify-content: center;
@@ -28,10 +42,11 @@ body {
 .wrapper__text-title {
   font-weight: 700;
   color: white;
+  margin: 0;
 }
 
 .wrapper__text-subtitle {
-  color: #878d99;
+  color: var(--subtitle);
   line-height: 1.4rem;
 }
 
@@ -61,7 +76,7 @@ body {
 
 .wrapper__button {
   width: 100%;
-  background-color: hsl(25, 97%, 53%);
+  background-color: var(--points);
   border: none;
   cursor: pointer;
   padding: 15px;
@@ -77,4 +92,49 @@ body {
 
 #wrap2 {
   display: none;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  width: 320px;
+  height: 300px;
+}
+
+#wrap2 h2 {
+  color: white;
+  margin: 0;
+}
+
+.wrapper__img {
+  max-inline-size: 140px;
+}
+
+.wrapper__points {
+  background-color: rgba(255, 255, 255, 0.063);
+  border-radius: 20px;
+  padding: 0 30px;
+  color: var(--points);
+}
+
+.wrapper__points-text {
+  margin: 10px 0;
+}
+
+#wrap2 h3 {
+  text-align: center;
+  width: 100%;
+  color: var(--subtitle);
+  font-weight: 400;
+  margin: 0;
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    max-width: 200px;
+    min-height: 350px;
+  }
+  #wrap2 {
+    min-width: 300px;
+  }
 }

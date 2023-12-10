@@ -32,13 +32,19 @@ stars.forEach((star, idx) => {
   })
 })
 
+
+
 let submit = document.querySelector('.wrapper__button');
 let wrap1 = document.getElementById('wrap1');
 let wrap2 = document.getElementById('wrap2');
 
 submit.addEventListener('click', function() {
-  wrap1.style.display = 'none';
-  wrap2.style.display = 'inline-flex';
+  if (starActive !== undefined) {
+    wrap1.style.display = 'none';
+    wrap2.style.display = 'inline-flex';
+  }
+
+  document.querySelector('.wrapper__points-text').innerHTML = `You selected ${starActive+1} out of 5`;
 })
 
 
