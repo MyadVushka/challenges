@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrapper" id="wrapper1">
+    <div class="wrapper__left-side">
+      <span class="wrapper__left-side-text">
+        <h2>Stay updated!</h2>
+        <p>Join 60,000+ product managers receiving monthly <br> updates on:</p>
+      </span>
+        <p class="wrapper__left-side-description"><img src="./img/icon-list.svg" alt="">Product discovery and building what matters</p>
+        <p class="wrapper__left-side-description"><img src="./img/icon-list.svg" alt="">Measuring to ensure updates are a success</p>
+        <p class="wrapper__left-side-description"><img src="./img/icon-list.svg" alt="">And much more!</p>
+        <form class="wrapper__left-side-form" action="">
+          <div class="wrapper__left-side-form_text">
+            <span>Email address</span>
+            <span class="wrapper__text_valid"></span>
+          </div>
+          <input class="form__email" type="text" placeholder="email@company.com">
+          <button class="form__submit first__screen" type="submit">Subscribe to monthly newsletter</button>
+        </form>
+    </div>
+    <div class="wrapper__right-side">
+      <img src="./img/illustration-sign-up-desktop.svg" alt="">
+    </div>
+  </div>
+  <div class="wrapper" id="wrapper2">
+    <img class="wrapper2__img" src="./img/icon-success.svg" alt="">
+    <h1>Thanks for <br> subscribing!</h1>
+    <p class="wrapper2__text"></p>
+    <button class="form__submit">Dismiss message</button>
+  </div>
+</body>
+  <script src="./script.js"></script>
+</html>

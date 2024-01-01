@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  height: 100vh;
+  background-color: rgb(56,60,76);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+.wrapper {
+  display: flex;
+  background-color: white;
+  column-gap: 60px;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+.wrapper__left-side {
+  padding-left: 40px;
+  padding-top: 20px;
+
+}
+
+.wrapper__left-side-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.wrapper__left-side-text h2 {
+  margin: 0;
+  padding-top: 50px;
+  font-size: 55px;
+}
+
+.wrapper__left-side-text p {
+  line-height: 1.5;
+}
+
+.wrapper__left-side-description {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.wrapper__left-side-form {
+  padding-top: 30px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.form__email {
+  border: solid 1px;
+  border-color: hsl(231, 7%, 60%);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.form__submit {
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  background: #282444;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.form__submit:hover {
+  background: linear-gradient(to right, #fc5474, #ff6c3c);
+  box-shadow: 0 0px 5px #fc5474, 0 0px 5px #ff6c3c; /* первые два нуля - Х и У, третий нуль - радиус размытия */
+}
+
+#wrapper2 {
+  display: none;
+  flex-direction: column;
+  width: 20%;
+  height: 40%;
+  justify-content: space-between;
+  padding: 35px 45px;
+  row-gap: 0px;
+}
+
+#wrapper2 h1 {
+  font-size: 60px;
+  margin: 20px 0 0 0 ;
+}
+
+.wrapper2__text {
+  line-height: 1.6;
+}
+
+.wrapper2__img {
+  max-width: 15%;
+}
+
+.wrapper__left-side-form_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper__text_valid {
+  color: #d27e77;
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    max-width: 350px;
+    flex-direction: column-reverse;
+    padding: 0 0 20px 0;
+  }
+  .wrapper__left-side {
+    padding: 0 20px;
+  }
+  .wrapper__right-side {
+    display: inline-block;
+  }
+  .wrapper__right-side img {
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #wrapper2 {
+    width: 350px;
+  }
+}
