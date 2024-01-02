@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculate App</title>
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="wrapper__input">
+      <form class="form" action="">
+        <div class="wrapper__form-input">
+          <p class="wrapper__input-blocks">
+            <span class="wrapper__input-blocks_date">DAY</span>
+            <input class="wrapper__input-blocks_forms" type="text" placeholder="DD">
+            <span class="wrapper__input-blocks_mistake"></span>
+          </p>
+          <p class="wrapper__input-blocks">
+            <span class="wrapper__input-blocks_date">MONTH</span>
+            <input class="wrapper__input-blocks_forms" type="text" placeholder="MM">
+            <span class="wrapper__input-blocks_mistake"></span>
+          </p>
+          <p class="wrapper__input-blocks">
+            <span class="wrapper__input-blocks_date">YEAR</span>
+            <input class="wrapper__input-blocks_forms" type="text" placeholder="YYYY">
+            <span class="wrapper__input-blocks_mistake"></span>
+          </p>
+        </div>
+        <div class="wrapper__input-submit">
+          <div class="stick"></div>
+          <button class="button-general" type="submit"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+        </div>
+      </form>
+    </div>
+    <div class="wrapper__text">
+      <span class="wrapper__output">
+        <span class="wrapper__output_placeholder">--</span>
+        <span>years</span>
+      </span>
+      <span class="wrapper__output">
+        <span class="wrapper__output_placeholder">--</span>
+        <span>months</span>
+      </span>
+      <span class="wrapper__output">
+        <span class="wrapper__output_placeholder">--</span>
+        <span>days</span>
+      </span>
+    </div>
+  </div>
+</body>
+  <script src="./script.js"></script>
+</html>
