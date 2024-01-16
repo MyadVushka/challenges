@@ -40,6 +40,34 @@ body {
   font-size: 32px;
   display: flex;
   justify-content: center;
+  color: white;
+}
+
+.lowerData {
+  position: absolute;
+  top: 85%;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  column-gap: 50px;
+}
+
+.nameSurname, .date {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
+}
+
+.nameSurname::placeholder, .date::placeholder {
+  color: white;
 }
 
 .wrapper__card_upper-left {
