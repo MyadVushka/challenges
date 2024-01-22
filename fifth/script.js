@@ -127,19 +127,17 @@ function validateCheck() {
   let isValid = true;
   if (!nameValidation()) {
     isValid = false;
-    console.log(isValid);
+
   }
   if (!numberValidation()) {
     isValid = false;
-    console.log(isValid);
+
   }
   if (!dateValidation()) {
     isValid = false;
-    console.log(isValid);
   }
   if (!cvvValidation()) {
     isValid = false;
-    console.log(isValid);
   }
   return isValid;
 }

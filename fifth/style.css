@@ -15,6 +15,10 @@ body {
   display: flex;
 }
 
+.secondImg {
+  display: none;
+}
+
 .wrapper__right {
   display: flex;
   justify-content: center;
@@ -207,3 +211,69 @@ button {
   flex-direction: column;
 }
 
+.wrapper__card-front_circles {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+}
+
+@media screen and (max-width: 375px) {
+  .firstImg {
+    display: none;
+  }
+  .secondImg {
+    display: block;
+    height: 30vh;
+  }
+  .wrapper {
+    flex-direction: column;
+    row-gap: 100px;
+  }
+  .front {
+    left: 3%;
+    top: 60%;
+    height: 60%;
+    z-index: 1;
+  }
+  .back {
+    height: 60%;
+    left: 10%;
+    top: 25%;
+  }
+  .wrapper__right {
+    padding: 15px;
+  }
+  .general {
+    box-sizing: border-box;
+    max-width: 90%;
+
+  }
+  .confirmButton {
+    width: 95%;
+  }
+  .cardnumber {
+    font-size: 26px;
+    left: 58%;
+  }
+  .lowerData {
+    left: 45%;
+  }
+  .wrapper__form_bot-cvv {
+    padding-right: 70px;
+  }
+  .third {
+    width: 110%;
+  }
+  .wrapper__card-front_circles {
+    left: 5%;
+  }
+  .wrapper__form_bot {
+    margin-bottom: 15px;
+  }
+  #wrapper__right2 {
+    padding: 0;
+  }
+  .secondButton {
+
+  }
+}
