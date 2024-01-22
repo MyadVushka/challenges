@@ -25,9 +25,10 @@
       </div>
       <div class="wrapper__cards back">
         <img src="./images/bg-card-back.png" alt="">
+        <input class="cvvInputCard" type="text" placeholder="000" readonly>
       </div>
     </div>
-    <div class="wrapper__right">
+    <div class="wrapper__right" id="wrapper__right1">
       <div class="wrapper__right-form">
         <form action="">
           <div class="wrapper__form_top">
@@ -38,25 +39,33 @@
             </div>
             <div class="form__card-number">
               <p>CARD NUMBER</p>
-              <input class="input general" id="cardNumberGeneral" type="text" placeholder="e.g. 1234 5678 9123 0000">
+              <input class="input general" id="cardNumberGeneral" type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="16">
               <span class="mistake"></span>
             </div>
           </div>
           <div class="wrapper__form_bot">
             <div class="wrapper__form_bot-date">
               <p>EXP. DATE(MM/YY)</p>
-              <input class="input second" id="monthes" type="text" placeholder="MM">
-              <input class="input second" id="years" type="text" placeholder="YY">
+              <input class="input second" id="monthes" type="text" placeholder="MM" maxlength="2">
+              <input class="input second" id="years" type="text" placeholder="YY" maxlength="2">
             </div>
             <div class="wrapper__form_bot-cvv">
               <p>CVC</p>
-              <input class="input third" type="text" placeholder="e.g. 123">
+              <input class="input third" type="text" placeholder="e.g. 123" maxlength="3">
               <span class="mistake"></span>
             </div>
           </div>
-          <button type="button">Confirm</button>
+          <button class="confirmButton" type="button">Confirm</button>
         </form>
       </div>
+    </div>
+    <div class="wrapper__right" id="wrapper__right2">
+      <div class="wrapper__right2-info">
+        <img src="./images/icon-complete.svg" alt="">
+        <span class="wrapper__right2-info_h2">THANK YOU!</span>
+        <span class="wrapper__right2-info_lowerText">We've added your card details</span>
+      </div>
+      <button class="confirmButton secondButton">Continue</button>
     </div>
   </div>
 </body>

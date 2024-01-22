@@ -31,21 +31,22 @@ body {
 
 .cardnumber {
   position: absolute;
-  top: 60%;
+  top: 57%;
   background-color: inherit;
   border: none;
   outline: none;
   left: 50%;
   transform: translateX(-50%);
   font-size: 32px;
-  display: flex;
+  display: inline-flex;
+  width: 360px;
   justify-content: center;
   color: white;
 }
 
 .lowerData {
   position: absolute;
-  top: 85%;
+  top: 80%;
   background-color: inherit;
   border: none;
   outline: none;
@@ -152,4 +153,46 @@ button {
   border: none;
   cursor: pointer;
   border-radius: 10px;
+}
+
+.cvvInputCard {
+  position: absolute;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 80%;
+  color: white;
+}
+
+.cvvInputCard::placeholder {
+  color: white;
+}
+
+#wrapper__right2 {
+  display: none; 
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+.wrapper__right2-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.wrapper__right2-info_h2 {
+  letter-spacing: 4px;
+  font-size: 32px;
+}
+
+.wrapper__right2-info_lowerText {
+  color: grey;
+  font-size: 20px;
+}
+
+.secondButton {
+  width: 40%;
 }
