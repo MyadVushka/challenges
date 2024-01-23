@@ -24,6 +24,7 @@ body {
   justify-content: center;
   width: 100%;
   align-items: center;
+  padding-left: 100px;
 }
 
 .wrapper__cards {
@@ -94,12 +95,12 @@ body {
 
 .front {
   top: 20%;
-  left: 45%;
+  left: 40%;
 }
 
 .back {
-  top: 50%;
-  left: 65%;
+  top: 47%;
+  left: 50%;
 }
 
 .wrapper__left_img {
